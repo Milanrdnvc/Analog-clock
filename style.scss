@@ -55,7 +55,7 @@ span {
     transform-origin: top;
 }
 
-.hour-handle {
+.minute-handle {
     width: 10px;
     height: 45%;
     transform: translateX(-50%);
@@ -65,14 +65,14 @@ span {
 .second-handle {
     width: 5px;
     height: 48%;
-    transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%);
     background-color: red;
 }
 
-.minute-handle {
+.hour-handle {
     width: 8px;
     height: 30%;
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%);
     background-color: black;
 }
 

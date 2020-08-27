@@ -1,7 +1,13 @@
-const test = document.querySelector('.second-handle');
-let secDeg = 6;
+const seconds = document.querySelector('.second-handle');
+const minutes = document.querySelector('.minute-handle');
+const hours = document.querySelector('.hour-handle');
 
-setInterval(() => {
-    test.style.transform = `translateX(-50%) rotate(${secDeg}deg)`;
-    secDeg += 6;
-}, 1000);
+function updateTime() {
+    seconds.style.transform = `translateX(-50%) rotate(${new Date().getSeconds() * 6 + 180}deg)`;
+    minutes.style.transform = `translateX(-50%) rotate(${new Date().getMinutes() * 6 + 180}deg)`;
+    hours.style.transform = `translateX(-50%) rotate(${new Date().getHours() * 30 + 180}deg)`;
+}
+
+updateTime();
+
+setInterval(updateTime, 1000);
