@@ -36,6 +36,46 @@ span {
     text-align: center;
 }
 
+.dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.hour-handle, .minute-handle, .second-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top;
+}
+
+.hour-handle {
+    width: 10px;
+    height: 45%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.second-handle {
+    width: 5px;
+    height: 48%;
+    transform: translateX(-50%) rotate(180deg);
+    background-color: red;
+}
+
+.minute-handle {
+    width: 8px;
+    height: 30%;
+    transform: translateX(-50%) rotate(-45deg);
+    background-color: black;
+}
+
 .number:nth-child(1) {
     transform: rotate(30deg);
     
