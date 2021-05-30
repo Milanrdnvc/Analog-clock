@@ -1,6 +1,6 @@
 # Analog Clock
 
-A simple analog clock
+A simple analog clock.
 
 [Go to website](https://milanrdnvc.github.io/Analog-clock/)
 
